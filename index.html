@@ -1,0 +1,204 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zamonaviy Dasturlash Markazi – ZDM.UZ</title>
+  
+  <!-- SEO -->
+  <meta name="description" content="ZDM.UZ – Frontend loyihalari, IT yangiliklari va dasturlash darslari markazi. Asadbek bilan zamonaviy IT bilimlarni o‘rganing!">
+  <meta name="keywords" content="zdm.uz, frontend, HTML, CSS, JavaScript, dasturlash, IT blog, Asadbek">
+  <meta name="author" content="Asadbek" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://zdm.uz/" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./ZDM__7_-removebg-preview.png" type="image/x-icon" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:title" content="Zamonaviy Dasturlash Markazi – ZDM.UZ" />
+  <meta property="og:description" content="Frontend loyihalari, IT yangiliklari va dasturlash darslari markazi." />
+  <meta property="og:image" content="https://zdm.uz/assets/preview.jpg" />
+  <meta property="og:url" content="https://zdm.uz/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Zamonaviy Dasturlash Markazi – ZDM.UZ" />
+  <meta name="twitter:description" content="Frontend va IT olami haqida eng so‘nggi darslar va yangiliklar." />
+  <meta name="twitter:image" content="https://zdm.uz/assets/preview.jpg" />
+</head>
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="rowHeader">
+          <div class="asaa">
+            <h1>ZDM</h1>
+            <div>
+              <p>Zamonaviy</p>
+              <p>Dasturlash</p>
+              <p>Markazi</p>
+            </div>
+          </div>
+          <button class="burger-menu" aria-label="Menu" onclick="toggleMenu()">☰</button>
+          <ul>
+            <li><a href="#home" data-lang="navHome">Bosh sahifa</a></li>
+            <li><a href="#about" data-lang="navAbout">Biz haqimizda</a></li>
+            <li><a href="#services" data-lang="navServices">Xizmatlar</a></li>
+            <li><a href="#tariffs" data-lang="navTariffs">SMM Tariflari</a></li>
+            <li><a href="#contact" data-lang="navContact">Bog'lanish</a></li>
+          </ul>
+          <select name="language" id="language-switcher" onchange="changeLanguage()">
+            <option value="uz">O'zb</option>
+            <option value="ru">Rus</option>
+            <option value="en">Eng</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <section class="intro-section" id="home">
+      <div class="intro-overlay">
+        <div class="container">
+          <div class="intro-content">
+            <h1 data-lang="introTitle">Kelajakni Biz Bilan Qur!</h1>
+            <p data-lang="introDesc">
+              Zamonaviy IT xizmatlar va ilg‘or texnologiyalar bilan orzularingizni ro‘yobga chiqaramiz.
+            </p>
+            <button
+              onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"
+              data-lang="contactButton"
+            >
+              Bog‘lanish
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+      <section id="about">
+        <div class="container">
+          <div class="rowMain">
+            <div class="left">
+              <h1 data-lang="aboutTitle">Biz haqimizda</h1>
+              <p data-lang="aboutDesc">
+                ZDM — Zamonaviy Dasturlash Markazi sifatida biz innovatsion IT yechimlarni taqdim etamiz.
+                Bizning jamoamiz tajribali dasturchilar, dizaynerlar va loyiha menejerlaridan iborat bo‘lib,
+                ular mijozlarning ehtiyojlariga moslashtirilgan yuqori sifatli dasturiy ta’minotlar va xizmatlar
+                yaratishga ixtisoslashgan. Bizning maqsadimiz — O‘zbekiston va xalqaro bozorlarda raqamli
+                transformatsiyani jadallashtirish, biznesingizni yangi bosqichga olib chiqish va zamonaviy
+                texnologiyalar orqali muvaffaqiyatga erishishingizga yordam berishdir.
+              </p>
+            </div>
+            <div class="right">
+              <img src="./pexels-goumbik-574070.jpg" alt="About Us Image" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services">
+        <div class="container">
+          <div class="seconmain">
+            <div class="service-card">
+              <h2>01</h2>
+              <h3 data-lang="service1">
+                Sizning talabingizni, maqsadingizni va yo'nalishingizni
+                aniqlaymiz. Hozirda sizning sohangizda qanday uslublar
+                ishlayotganini bilib olamiz, so'ngra sizning dasturiy
+                ta'minotingizni shunga mos ravishda ishlab chiqamiz.
+              </h3>
+            </div>
+            <div class="service-card">
+              <h2>02</h2>
+              <h3 data-lang="service2">
+                Ranglarning yorqinligi, dastur dizayni, dastur xaritasi va
+                uslubi. Biz sizning brendingizni shunchaki siz uchun yaratilgan
+                noyob durdonalardan biri bilan hayotga tatbiq etamiz.
+              </h3>
+            </div>
+            <div class="service-card">
+              <h2>03</h2>
+              <h3 data-lang="service3">
+                Biz sizning g'oyalaringizni haqiqatga aylantiramiz. Va bizning
+                dasturiy ta'minotimiz "rivojlanish serverida" joylashtirilgan
+                bo'lib, unda siz butun jarayonni real vaqt rejimida nazorat
+                qilishingiz mumkin.
+              </h3>
+            </div>
+            <div class="service-card">
+              <h2>04</h2>
+              <h3 data-lang="service4">
+                Dasturiy ta'minotingizga bizning professional xodimlar tomonidan
+                doimiy ravishda texnik va amaliy xizmat ko'rsatiladi.
+                Yangilanishlar va o'zgarishlardan doimo xabardor bo'lib borasiz.
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="tariffs">
+        <div class="container">
+          <div class="thirdMain">
+            <h2 data-lang="whyUsTitle">Nima uchun biz?</h2>
+            <br />
+            <p><strong data-lang="whyUsHighlight">Eng samarali Intellektual dasturiy ta'minot ishlab chiqaruvchi kompaniyamiz.</strong></p>
+            <br>
+            <p data-lang="whyUsDesc">
+              ZDM — Zamonaviy Dasturchilar Markazi — bu texnologiyalar,
+              innovatsiyalar va ilg‘or dasturlash yechimlari bilan
+              shug‘ullanuvchi zamonaviy IT kompaniya. Bizning maqsadimiz —
+              O‘zbekistonda va undan tashqarida raqamli rivojlanishni
+              jadallashtirish, dasturchilar uchun imkoniyatlar yaratish hamda
+              bizneslar uchun sifatli IT xizmatlarini taqdim etishdir.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="s" id="contact">
+        <div class="container">
+          <div class="ss">
+            <h1 class="as" data-lang="contactTitle">Bog'lanish Uchun</h1>
+            <div class="div">
+              <a
+                href="https://t.me/toirovvasad"
+                target="_blank"
+                class="icon telegram"
+                aria-label="Telegram"
+              >
+                <img
+                  src="./Telegram-Logo-PNG-Image-removebg-preview.png"
+                  alt="Telegram"
+                />
+              </a>
+              <a
+                href="tel:+998938573311"
+                class="icon phone"
+                aria-label="Telefon"
+              >
+                <img src="./6815116-removebg-preview.png" alt="Telefon" />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="icon instagram"
+                aria-label="Instagram"
+              >
+                <img src="./images-removebg-preview.png" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <p data-lang="footer">
+          &copy; 2025 Zamonaviy Dasturlash Markazi. Barcha huquqlar himoyalangan.
+        </p>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
